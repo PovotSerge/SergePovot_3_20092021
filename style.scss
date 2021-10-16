@@ -12,6 +12,7 @@ body {
   min-width: 320px;
   position: relative;
 }
+/* .Spinare avec animation */
 .spinaire {
   position: absolute;
   right: 40%;
@@ -25,6 +26,7 @@ body {
   border-radius: 50px;
   animation: spin 1s linear 5;
   opacity: 0;
+  /* Media Queries */
   @media (min-width: 768px) {
     right: 45%;
   }
@@ -32,6 +34,7 @@ body {
     right: 48%;
   }
 }
+/* /Media Queries */
 
 @keyframes spin {
   0% {
@@ -42,6 +45,7 @@ body {
     transform: rotate(360deg);
   }
 }
+/* /.Spinare avec animation */
 
 .containte {
   max-width: 1024px;
@@ -55,7 +59,7 @@ body {
     opacity: 1;
   }
 }
-
+/* HEADER */
 .header {
   width: 100%;
   text-align: center;
@@ -79,6 +83,7 @@ body {
       @include fonts-texte;
     }
   }
+  /* DISCRIPTION */
   &__discription {
     background-color: $sicol;
     padding-bottom: 3rem;
@@ -116,7 +121,9 @@ body {
     }
   }
 }
-
+/* /DISCRIPTION */
+/* /HEADER */
+/* FUNCTION */
 .functions {
   background-color: $sdcol;
   padding: 1rem 1.5rem 2.5rem;
@@ -198,11 +205,13 @@ body {
     }
   }
 }
+/* /FUNCTION */
 .teste {
   @media (min-width: 1024px) {
     margin-left: 25px;
   }
 }
+/* RESTAURANTS */
 .restaurants {
   height: auto;
   background-color: $sicol;
@@ -297,6 +306,8 @@ body {
     }
   }
 }
+/* /RESTAURANTS */
+/* FOOTER */
 .footer {
   background-color: lighten($thcol, 20);
   height: auto;
@@ -328,3 +339,4 @@ body {
 .fa-hands-helping {
   font-size: 0.5rem;
 }
+/* /FOOTER */

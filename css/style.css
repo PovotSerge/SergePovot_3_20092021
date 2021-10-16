@@ -8,6 +8,7 @@ body {
   position: relative;
 }
 
+/* .Spinare avec animation */
 .spinaire {
   position: absolute;
   right: 40%;
@@ -22,6 +23,7 @@ body {
   -webkit-animation: spin 1s linear 5;
           animation: spin 1s linear 5;
   opacity: 0;
+  /* Media Queries */
 }
 
 @media (min-width: 768px) {
@@ -36,6 +38,7 @@ body {
   }
 }
 
+/* /Media Queries */
 @-webkit-keyframes spin {
   0% {
     opacity: 1;
@@ -47,7 +50,6 @@ body {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     opacity: 1;
@@ -60,6 +62,7 @@ body {
   }
 }
 
+/* /.Spinare avec animation */
 .containte {
   max-width: 1024px;
   margin: 0 auto;
@@ -80,9 +83,11 @@ body {
   }
 }
 
+/* HEADER */
 .header {
   width: 100%;
   text-align: center;
+  /* DISCRIPTION */
 }
 
 .header__logo {
@@ -160,6 +165,9 @@ body {
           box-shadow: 3px 3px 8px #9356dc;
 }
 
+/* /DISCRIPTION */
+/* /HEADER */
+/* FUNCTION */
 .functions {
   background-color: #fff;
   padding: 1rem 1.5rem 2.5rem;
@@ -271,12 +279,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* /FUNCTION */
 @media (min-width: 1024px) {
   .teste {
     margin-left: 25px;
   }
 }
 
+/* RESTAURANTS */
 .restaurants {
   height: auto;
   background-color: #f3f4f5;
@@ -393,6 +403,8 @@ body {
   transition: 1s;
 }
 
+/* /RESTAURANTS */
+/* FOOTER */
 .footer {
   background-color: #333333;
   height: auto;
@@ -428,4 +440,6 @@ body {
 .fa-hands-helping {
   font-size: 0.5rem;
 }
+
+/* /FOOTER */
 /*# sourceMappingURL=style.css.map */
