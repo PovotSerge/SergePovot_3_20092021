@@ -1,0 +1,17 @@
+@mixin fonts-title {
+  font-family: "Shrikhand", cursive;
+}
+
+@mixin fonts-texte {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin btn-color {
+  background: #ff79da;
+  background: linear-gradient(177deg, #ff79da 0%, #9356dc 71%);
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 3px 3px 8px #cccccc;
+  box-shadow: 3px 3px 8px #cccccc;
+}
