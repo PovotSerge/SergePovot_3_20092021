@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
-
 html {
   background-color: #e5e7e9;
 }
@@ -21,7 +20,7 @@ body {
   border-top: 3px solid white;
   border-radius: 50px;
   -webkit-animation: spin 1s linear 5;
-  animation: spin 1s linear 5;
+          animation: spin 1s linear 5;
   opacity: 0;
 }
 
@@ -41,11 +40,11 @@ body {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -53,11 +52,11 @@ body {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -66,7 +65,7 @@ body {
   margin: 0 auto;
   opacity: 0;
   -webkit-animation: accApparation 5s ease 5s 1 forwards;
-  animation: accApparation 5s ease 5s 1 forwards;
+          animation: accApparation 5s ease 5s 1 forwards;
 }
 
 @-webkit-keyframes accApparation {
@@ -158,7 +157,7 @@ body {
 .header__discription--link:hover {
   background: #ff79da;
   -webkit-box-shadow: 3px 3px 8px #9356dc;
-  box-shadow: 3px 3px 8px #9356dc;
+          box-shadow: 3px 3px 8px #9356dc;
 }
 
 .functions {
@@ -198,8 +197,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -208,8 +207,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 85%;
   background-color: #f3f4f5;
   padding: 1.5rem 1.5rem;
@@ -235,7 +234,7 @@ body {
   transition: 900ms;
   background-color: #f2eafb;
   -webkit-box-shadow: 3px 3px 3px #d7c0f2;
-  box-shadow: 3px 3px 3px #d7c0f2;
+          box-shadow: 3px 3px 3px #d7c0f2;
   color: #9356dc;
 }
 
@@ -319,7 +318,7 @@ body {
   width: 100%;
   height: 10rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }

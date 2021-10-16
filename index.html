@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="spinaire"></div>
+  <div class="spinaire"></div> <!-- Spinaire animation -->
+  <!-- Containte -->
   <div class="containte">
+    <!-- .Header -->
     <header class="header">
       <div class="header__logo"><a href="index.html"><img src="img/logo/ohmyfood@2x.svg" alt="Logo"></a></div>
       <div class="header__maps"><i class="fas fa-map-marker-alt header__maps--icon"></i><a href="#"
@@ -22,83 +24,93 @@
         <a href="#" class="header__discription--link">Explorer nos restaurants</a>
       </div>
     </header>
-    <div class="functions">
-      <h2 class="functions__title">Fonctionnement</h2>
-      <div class="functions__wrapp">
-        <div class="teste">
-          <div class="functions__btn">
-            <div class="functions__btn--nombre">
-              <span class="functions__btn--nombre1">1</span>
+    <!-- /.Header -->
+    <!-- Section.Function avec btn navigation -->
+    <section>
+      <div class="functions">
+        <h2 class="functions__title">Fonctionnement</h2>
+        <div class="functions__wrapp">
+          <div class="teste">
+            <div class="functions__btn">
+              <div class="functions__btn--nombre">
+                <span class="functions__btn--nombre1">1</span>
+              </div>
+              <i class="fas fa-mobile-alt"></i>
+              <span class="functions__btn--icon"></span>
+              <span><a href="#" class="functions__btn--title">Choisissez un restaurant</a></span>
             </div>
-            <i class="fas fa-mobile-alt"></i>
-            <span class="functions__btn--icon"></span>
-            <span><a href="#" class="functions__btn--title">Choisissez un restaurant</a></span>
+          </div>
+          <div class="teste">
+            <div class="functions__btn">
+              <div class="functions__btn--nombre">
+                <span class="functions__btn--nombre1">2</span>
+              </div>
+              <i class="fas fa-list-ul"></i>
+              <span class="functions__btn--icon"></span>
+              <span><a href="#" class="functions__btn--title">Composez votre menu</a></span>
+            </div>
+          </div>
+          <div class="teste">
+            <div class="functions__btn">
+              <div class="functions__btn--nombre">
+                <span class="functions__btn--nombre1">3</span>
+              </div>
+              <i class="fas fa-store"></i>
+              <span class="functions__btn--icon functions__btn--icon1"></span>
+              <span><a href="#" class="functions__btn--title">Dégustez au restaurant</a></span>
+            </div>
           </div>
         </div>
-        <div class="teste">
-          <div class="functions__btn">
-            <div class="functions__btn--nombre">
-              <span class="functions__btn--nombre1">2</span>
-            </div>
-            <i class="fas fa-list-ul"></i>
-            <span class="functions__btn--icon"></span>
-            <span><a href="#" class="functions__btn--title">Composez votre menu</a></span>
-          </div>
+      </div>
+    </section>
+    <!-- Section /.Function avec btn navigation -->
+    <!-- Section.Restaurants avec lien pour menu.html 1, 2, 3, 4 -->
+    <section>
+      <div class="restaurants">
+        <h3 class="restaurants__title">Restaurants</h3>
+        <div class="restaurants__wrapp">
+          <a href="./menu1.html">
+            <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo" class="restaurants__image">
+          </a>
+          <a href="./menu1.html" class="restaurants__card-title">La palette du goût</a>
+          <p><a href="./menu1.html" class="restaurants__card-subtitle">Ménilmontant</a></p>
+          <div class="restaurants__nouveau">Nouveau</div>
+          <i class="far fa-heart restaurants__icon"></i>
+          <i class="fas fa-heart restaurants__icon--hov"></i>
         </div>
-        <div class="teste">
-          <div class="functions__btn">
-            <div class="functions__btn--nombre">
-              <span class="functions__btn--nombre1">3</span>
-            </div>
-            <i class="fas fa-store"></i>
-            <span class="functions__btn--icon functions__btn--icon1"></span>
-            <span><a href="#" class="functions__btn--title">Dégustez au restaurant</a></span>
-          </div>
+        <div class="restaurants__wrapp">
+          <a href="./menu2.html">
+            <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo" class="restaurants__image">
+          </a>
+          <a href="./menu2.html" class="restaurants__card-title">La note enchantée</a>
+          <p><a href="./menu2.html" class="restaurants__card-subtitle">Charonne</a></p>
+          <div class="restaurants__nouveau">Nouveau</div>
+          <i class="far fa-heart restaurants__icon"></i>
+          <i class="fas fa-heart restaurants__icon--hov"></i>
+        </div>
+        <div class="restaurants__wrapp">
+          <a href="./menue3.html">
+            <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo" class="restaurants__image">
+          </a>
+          <a href="./menue3.html" class="restaurants__card-title">À la française</a>
+          <p><a href="./menue3.html" class="restaurants__card-subtitle">Cité Rouge</a></p>
+          <i class="far fa-heart restaurants__icon"></i>
+          <i class="fas fa-heart restaurants__icon--hov"></i>
+        </div>
+        <div class="restaurants__wrapp">
+          <a href="./menu4.html">
+            <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo"
+              class="restaurants__image">
+          </a>
+          <a href="./menu4.html" class="restaurants__card-title">Le délice des sens</a>
+          <p><a href="./menu4.html" class="restaurants__card-subtitle">Folie-Méricourt</a></p>
+          <i class="far fa-heart restaurants__icon"></i>
+          <i class="fas fa-heart restaurants__icon--hov"></i>
         </div>
       </div>
-    </div>
-    <div class="restaurants">
-      <h3 class="restaurants__title">Restaurants</h3>
-      <div class="restaurants__wrapp">
-        <a href="./menu1.html">
-          <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo" class="restaurants__image">
-        </a>
-        <a href="./menu1.html" class="restaurants__card-title">La palette du goût</a>
-        <p><a href="./menu1.html" class="restaurants__card-subtitle">Ménilmontant</a></p>
-        <div class="restaurants__nouveau">Nouveau</div>
-        <i class="far fa-heart restaurants__icon"></i>
-        <i class="fas fa-heart restaurants__icon--hov"></i>
-      </div>
-      <div class="restaurants__wrapp">
-        <a href="./menu2.html">
-          <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo" class="restaurants__image">
-        </a>
-        <a href="./menu2.html" class="restaurants__card-title">La note enchantée</a>
-        <p><a href="./menu2.html" class="restaurants__card-subtitle">Charonne</a></p>
-        <div class="restaurants__nouveau">Nouveau</div>
-        <i class="far fa-heart restaurants__icon"></i>
-        <i class="fas fa-heart restaurants__icon--hov"></i>
-      </div>
-      <div class="restaurants__wrapp">
-        <a href="./menue3.html">
-          <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo" class="restaurants__image">
-        </a>
-        <a href="./menue3.html" class="restaurants__card-title">À la française</a>
-        <p><a href="./menue3.html" class="restaurants__card-subtitle">Cité Rouge</a></p>
-        <i class="far fa-heart restaurants__icon"></i>
-        <i class="fas fa-heart restaurants__icon--hov"></i>
-      </div>
-      <div class="restaurants__wrapp">
-        <a href="./menu4.html">
-          <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo"
-            class="restaurants__image">
-        </a>
-        <a href="./menu4.html" class="restaurants__card-title">Le délice des sens</a>
-        <p><a href="./menu4.html" class="restaurants__card-subtitle">Folie-Méricourt</a></p>
-        <i class="far fa-heart restaurants__icon"></i>
-        <i class="fas fa-heart restaurants__icon--hov"></i>
-      </div>
-    </div>
+    </section>
+    <!-- Section /.Restaurants avec lien pour menu.html 1, 2, 3, 4 -->
+    <!-- .Footer -->
     <div class="footer">
       <div class="footer__wrapp">
         <a href="#" class="footer__logo"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="22"
@@ -135,6 +147,8 @@
           class="footer__resto footer__resto--fin">Contact</a><br />
       </div>
     </div>
+    <!-- /.Footer -->
   </div>
+  <!-- / Containte -->
 </body>
 </html>
