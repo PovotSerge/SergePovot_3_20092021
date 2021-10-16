@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
 }
 
+/* HEADER */
 .header {
   background-color: #fff;
   display: -webkit-box;
@@ -43,6 +44,8 @@ body {
      object-fit: cover;
 }
 
+/* /HEADER */
+/* MAIN */
 .main {
   -webkit-transform: translate(0, -55px);
           transform: translate(0, -55px);
@@ -291,6 +294,8 @@ span {
   color: #9356dc;
 }
 
+/* /MAIN */
+/* FOOTER */
 .footer {
   background-color: #333333;
   height: auto;
@@ -329,4 +334,6 @@ span {
 .fa-hands-helping {
   font-size: 0.5rem;
 }
+
+/* /FOOTER */
 /*# sourceMappingURL=menu.css.map */
