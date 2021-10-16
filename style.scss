@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
+
+@import "./utils/variables.scss";
+
+@import "./utils/mixins.scss";
+
+html {
+  background-color: $prcol;
+}
+
+body {
+  min-width: 320px;
+  position: relative;
+}
+.spinaire {
+  position: absolute;
+  right: 40%;
+  top: 15%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-left: 3px solid red;
+  border-right: 3px solid blue;
+  border-top: 3px solid white;
+  border-radius: 50px;
+  animation: spin 1s linear 5;
+  opacity: 0;
+  @media (min-width: 768px) {
+    right: 45%;
+  }
+  @media (min-width: 1024px) {
+    right: 48%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.containte {
+  max-width: 1024px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: accApparation 5s ease 5s 1 forwards;
+}
+
+@keyframes accApparation {
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  &__logo {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: $sdcol;
+    font-size: 1rem;
+  }
+  &__maps {
+    margin-top: 1.1rem;
+    &--icon {
+      padding-right: 1.2rem;
+      font-size: 1.1rem;
+    }
+    &--link {
+      text-decoration: none;
+      color: $thcol;
+      font-size: 1.2rem;
+      padding-right: 2.4rem;
+      @include fonts-texte;
+    }
+  }
+  &__discription {
+    background-color: $sicol;
+    padding-bottom: 3rem;
+    &--title1 {
+      font-size: 1.4rem;
+      padding-top: 2rem;
+      @include fonts-texte;
+      @media (min-width: 540px) {
+        font-size: 1.8rem;
+      }
+    }
+    &--title2 {
+      color: $ficol;
+      margin-bottom: 2rem;
+      @include fonts-texte;
+      font-weight: 100;
+      @media (min-width: 540px) {
+        font-size: 1.2rem;
+      }
+    }
+    &--link {
+      text-decoration: none;
+      @include fonts-texte;
+      color: $sdcol;
+      @include btn-color;
+      padding: 0.8rem 1.2rem;
+      border-radius: 3rem;
+      font-size: 0.8rem;
+      @include box-shadow;
+      transition: 2s;
+      &:hover {
+        background: $col-secondaire;
+        box-shadow: 3px 3px 8px $col-primaire;
+      }
+    }
+  }
+}
+
+.functions {
+  background-color: $sdcol;
+  padding: 1rem 1.5rem 2.5rem;
+  &__title {
+    @include fonts-texte;
+    font-weight: 700;
+    @media (min-width: 530px) {
+      text-align: center;
+    }
+  }
+  &__wrapp {
+    @media (min-width: 530px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (min-width: 640px) {
+      width: 22rem;
+    }
+    @media (min-width: 1024px) {
+      margin: 0;
+      width: 16rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    background-color: $sicol;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.4rem;
+    margin-bottom: 0.7rem;
+    transition-property: background-color;
+    transition: 600ms;
+    @include box-shadow;
+    @media (min-width: 1024px) {
+      width: 16rem;
+      padding: 1.1rem 1.1rem;
+    }
+
+    &:hover {
+      transition: 900ms;
+      background-color: lighten($col-primaire, 35);
+      box-shadow: 3px 3px 3px lighten($col-primaire, 25);
+      color: $col-primaire;
+    }
+
+    &--nombre {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: $col-primaire;
+      color: $sdcol;
+      @include fonts-texte;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-right: 1.5rem;
+      border-radius: 100%;
+      margin-left: -2rem;
+      position: relative;
+    }
+    &--nombre1 {
+      position: absolute;
+      margin-left: -0.2rem;
+      margin-top: 0.15rem;
+    }
+
+    &--icon {
+      color: $ficol;
+      font-size: 1.1rem;
+      margin-right: 1.5rem;
+    }
+
+    &--title {
+      text-decoration: none;
+      color: $thcol;
+      font-size: 1.2rem;
+      @include fonts-texte;
+    }
+  }
+}
+.teste {
+  @media (min-width: 1024px) {
+    margin-left: 25px;
+  }
+}
+.restaurants {
+  height: auto;
+  background-color: $sicol;
+  margin-top: -1.4rem;
+  padding-left: 1.5rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    @include fonts-texte;
+    @media (min-width: 530px) {
+      text-align: center;
+    }
+  }
+  &__wrapp {
+    background-color: $sdcol;
+    width: 94%;
+    height: 14.5rem;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 0.9rem;
+    @include box-shadow;
+    @media (min-width: 768px) {
+      width: 97%;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  &__card-title {
+    text-decoration: none;
+    color: $thcol;
+    font-weight: bold;
+    display: block;
+    padding-top: 0.7rem;
+    padding-left: 0.6rem;
+    @include fonts-texte;
+    @media (min-width: 1024px) {
+      font-size: 1.4rem;
+    }
+  }
+  &__card-subtitle {
+    text-decoration: none;
+    display: block;
+    margin-top: -0.8rem;
+    padding-left: 0.6rem;
+    color: $ficol;
+    @include fonts-texte;
+    font-weight: 100;
+    @media (min-width: 1024px) {
+      font-size: 1.1rem;
+    }
+  }
+  &__nouveau {
+    background-color: $col-tertiaire;
+    color: #229954;
+    width: 22%;
+    height: 18px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    position: absolute;
+    right: 0.7rem;
+    top: 0.7rem;
+  }
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: 12rem;
+    font-size: 1.3rem;
+
+    &--hov {
+      display: inline-block;
+      position: absolute;
+      right: 1.95rem;
+      top: 11.94rem;
+      font-size: 1.42rem;
+      color: #9356dc;
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+        transition: 1s;
+      }
+    }
+  }
+}
+.footer {
+  background-color: lighten($thcol, 20);
+  height: auto;
+  & a {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  &__wrapp {
+    padding: 1.5rem;
+  }
+  &__resto {
+    color: $sdcol;
+    text-decoration: none;
+    font-size: 0.9rem;
+    @include fonts-texte;
+
+    &--fin {
+      @include fonts-texte;
+      font-weight: 100;
+    }
+  }
+  &__icon {
+    color: $sdcol;
+    font-size: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+
+.fa-hands-helping {
+  font-size: 0.5rem;
+}
